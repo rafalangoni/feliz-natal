@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --font-poppins: 'Poppins', sans-serif;
+    --background-pink: rgb(255, 233, 237);
+    --background-white: white;
+    --font-color-primary: #161212;
+    --color-button: rgb(247, 90, 90);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    background-color: var(--background-pink);
+}  
+
+.cabecalho-logo-titulo{
+    display: flex;
+    flex: row;
+    /* align-content: flex-start; */
+    padding-left: 30px;
+} 
+
+.cabecalho-titulo{
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--font-color-primary);
+    margin-left: 10px;
+}
+
+.cabecalho-navegacao{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.cabecalho-navegacao-item{
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--font-color-primary);
+}
+
+.conteudo{
+}
+
+.conteudo-primario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: var(--background-pink);
+    padding-left: 45px;
+    justify-content: space-around;
+}
+
+.conteudo-primario-escrito{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-primario-titulo{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.conteudo-primario-paragrafo{
+    font-family: var(--font-color-primary);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.conteudo-primario-botao{
+    border: none;
+    background-color: rgb(247, 90, 90);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px;
+    color: var(--background-white);
+    font-size: 18px;
+}
+
+.conteudo-primario-botao:hover{
+    color: var(--font-color-primary);
+    transition: 1s;
+}
+
+.conteudo-primario-imagem{
+    width: 600px;
+    height: 400px;
+}
